@@ -17,7 +17,8 @@
 
 :where(.css-dev-only-do-not-override-mxhywb).ant-pagination {
   box-sizing: border-box;
-  background-color: #30303a;
+  margin: 16px 0;
+  background-color: $theme-dark;
   .ant-pagination-item {
     background-color: white;
 
@@ -26,7 +27,6 @@
       background-color: #686885;
     }
   }
-
   .ant-pagination-prev,
   .ant-pagination-next {
     background-color: white;
@@ -38,7 +38,6 @@
       justify-content: center;
     }
   }
-
   .ant-pagination-item-active {
     color: whitesmoke;
     border-color: black;
@@ -111,9 +110,7 @@
   }
 }
 
-/*============================================= Table  Column =============================================== */
-
-// --------------------------- For Table Cell   -----------------------------------
+/*============================================= Table =============================================== */
 
 :where(.css-dev-only-do-not-override-mxhywb).ant-table-wrapper {
   margin-left: 15px;
@@ -152,18 +149,6 @@
       }
     }
   }
-
-  .ant-table-pagination {
-    .ant-pagination {
-      background-color: #30303a;
-    }
-  }
-}
-
-:where(.css-dev-only-do-not-override-mxhywb).ant-table-wrapper
-  .ant-table-pagination.ant-pagination {
-  margin: 16px 0;
-  background-color: $theme-dark;
 }
 
 .mar-right-8 {
@@ -205,18 +190,17 @@
   border-radius: 5px;
 }
 
-// ---------------------------    copy button   -----------------------------------
-
-// .copy-shadow{
-//   ;
-// }
-
 /*============================================= Table View Row Data =============================================== */
 
 .ant-btn.ant-btn-default,
 .ant-btn.ant-btn-primary {
   width: 150px;
   height: 45px;
+}
+
+.ant-btn.ant-btn-lg.ant-btn-icon-only {
+  width: 40px;
+  height: 40px;
 }
 
 .viewRowDataLayout {
@@ -284,7 +268,3 @@
     margin-bottom: 5px;
   }
 }
-
-// .anticon {
-
-// }
