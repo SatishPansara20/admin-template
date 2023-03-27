@@ -28,7 +28,6 @@ const UsedCar = (props) => {
       >
         <div>
           <div className="container-fluid">
-           
             <div className="row clearfix">
               <Tabs
                 onChange={onChange}
