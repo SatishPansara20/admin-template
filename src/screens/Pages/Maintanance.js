@@ -26,6 +26,7 @@ class Maintanance extends React.Component {
               </article>
               <div className="margin-top-30">
                 <a
+                  href=" "
                   className="btn btn-default"
                   onClick={() => {
                     this.props.history.push("projectslist");
