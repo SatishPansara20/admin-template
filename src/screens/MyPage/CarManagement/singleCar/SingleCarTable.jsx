@@ -8,7 +8,7 @@ import {
 } from "@ant-design/icons";
 // import CustomModal from "../../../../../components/common/Modal";
 
-import "../../CarManagement.scss";
+import "../../";
 
 import CopyToClipboard from "react-copy-to-clipboard";
 // import { Link } from "react-router-dom";
@@ -189,7 +189,7 @@ const SingleCarTable = () => {
 
             <a href="view">
               <Typography
-                className="mar-right-8"
+                className="mar-right-10"
                 onClick={() => viewRow(record)}
               >
                 <EyeOutlined style={{ fontSize: "30px", color: "white" }} />
@@ -199,7 +199,7 @@ const SingleCarTable = () => {
             <a href="edit">
               <Typography
                 to="edit"
-                className="mar-right-8"
+                className="mar-right-10"
                 style={{
                   borderColor: "white",
                 }}

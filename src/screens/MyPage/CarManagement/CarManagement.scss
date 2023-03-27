@@ -116,8 +116,9 @@
 // --------------------------- For Table Cell   -----------------------------------
 
 :where(.css-dev-only-do-not-override-mxhywb).ant-table-wrapper {
+  margin-left: 15px;
+  margin-right: 10px;
   table {
-    //  table head
     background-color: #30303a;
     color: whitesmoke;
     .ant-table-thead {
@@ -151,17 +152,33 @@
       }
     }
   }
+
+  .ant-table-pagination {
+    .ant-pagination {
+      background-color: #30303a;
+    }
+  }
+}
+
+:where(.css-dev-only-do-not-override-mxhywb).ant-table-wrapper
+  .ant-table-pagination.ant-pagination {
+  margin: 16px 0;
+  background-color: $theme-dark;
 }
 
 .mar-right-8 {
   margin-right: 8px;
 }
 
+.mr-b-5 {
+  margin-bottom: 8px;
+}
+
 .gap-5 {
   gap: 5px;
 }
 
-.ant-btn{
+.ant-btn {
   padding: 0;
 }
 
@@ -183,7 +200,7 @@
 
 .status {
   text-align: center;
-  min-width: 87px;
+  min-width: 92px;
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -196,10 +213,17 @@
 
 /*============================================= Table View Row Data =============================================== */
 
+.ant-btn.ant-btn-default,
+.ant-btn.ant-btn-primary {
+  width: 150px;
+  height: 45px;
+}
+
 .viewRowDataLayout {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  padding: 20px;
 
   .field {
     display: flex;
@@ -221,7 +245,7 @@
       display: inline-block;
       width: 100%;
       min-height: 45px;
-      color: black;
+      color: #c5a5a5;
       border: 1px solid $placeholder-color;
       border-radius: 10px;
       padding: 8px 20px;
