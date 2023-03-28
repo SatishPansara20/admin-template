@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { Button, Table, Typography } from "antd";
 import {
   EditOutlined,
@@ -146,7 +146,7 @@ const SingleCarTable = () => {
     {
       title: "Status",
       key: "status",
-      // width: "150px",
+      width: "120px",
       dataIndex: "status",
       render: (_, { status }) => {
         return status.toUpperCase() === "ACTIVE" ? (

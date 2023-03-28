@@ -163,10 +163,6 @@
   gap: 5px;
 }
 
-.ant-btn {
-  padding: 0;
-}
-
 // --------------------------- Status   -----------------------------------
 .status-active {
   border: 1px solid green;
@@ -206,7 +202,7 @@
 .viewRowDataLayout {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 20px;
   padding: 20px;
 
   .field {
@@ -223,6 +219,7 @@
       padding-left: 4px;
       text-transform: capitalize;
       color: whitesmoke;
+      margin: 0;
     }
 
     .filed-content {
@@ -233,6 +230,7 @@
       border: 1px solid $placeholder-color;
       border-radius: 10px;
       padding: 8px 20px;
+      margin: 0;
     }
   }
   .col-span {
@@ -252,19 +250,48 @@
 .ant-form {
   display: inline-block;
   width: 100%;
-  // .row {
-  //   .ant-input {
-  //     // @include prefix(box-shadow, 0px 4px 12px rgba(18, 42, 70, 0.31));
-  //     // height: 20px !important;
-  //   }
-  // }
 
-  [class^="col-"] {
-    padding-right: 10px;
-    padding-left: 5px;
+  .row {
+    margin: 0;
+    // .ant-input {
+    //   // @include prefix(box-shadow, 0px 4px 12px rgba(18, 42, 70, 0.31));
+    //   // height: 20px !important;
+    // }
+
+    [class^="col-"] {
+      padding-right: 10px;
+      padding-left: 5px;
+    }
+
+    .ant-form-item {
+      margin-bottom: 5px;
+    }
+
+    .mar-top-8 {
+      margin-top: 16px;
+    }
+  }
+}
+
+.pageLabel {
+  padding: 20px;
+  position: relative;
+  box-shadow: none;
+}
+
+@include responsive(xs) {
+  .viewRowDataLayout {
+    display: flex;
+    flex-direction: column;
   }
 
-  .ant-form-item {
-    margin-bottom: 5px;
+  :where(.css-dev-only-do-not-override-mxhywb).ant-form .row {
+    gap: 10px;
+    .ant-form-item {
+      .ant-form-item-label,
+      .ant-form-item-control {
+        flex: 0 0 50%;
+      }
+    }
   }
 }
