@@ -1,7 +1,15 @@
 import React from "react";
 import { connect } from "react-redux";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Logo from "../../assets/images/logo-white.svg";
+// import Logo from "../../assets/images/logo-white.svg";
+
+const LogoStyle = {
+  color: "white",
+  // backgroundColor: "DodgerBlue",
+  padding: "10px",
+  fontFamily: "Arial",
+  fontSize: "45px",
+};
 
 class Registration extends React.Component {
   componentDidMount(){
@@ -20,7 +28,8 @@ class Registration extends React.Component {
             <div className="vertical-align-middle auth-main">
               <div className="auth-box">
                 <div className="top">
-                  <img src={Logo} alt="Lucid" style={{ height: "40px", margin: "10px" }} />
+                  {/* <img src={Logo} alt="Lucid" style={{ height: "40px", margin: "10px" }} /> */}
+                  <span style={LogoStyle}>AUTO</span>
                 </div>
                 <div className="card">
                   <div className="header">

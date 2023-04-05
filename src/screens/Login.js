@@ -2,17 +2,25 @@ import React, { useEffect, useState } from "react";
 
 import {
   // connect,
-  useDispatch,
+  // useDispatch,
 } from "react-redux";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import Logo from "../assets/images/logo-white.svg";
+// import Logo from "../assets/images/logo-white.svg";
 
-import { userInfo } from "../redux/AuthSlice";
+// import { userInfo } from "../redux/AuthSlice";
 // import { Button } from "antd";
 
+const LogoStyle = {
+  color: "white",
+  // backgroundColor: "DodgerBlue",
+  padding: "10px",
+  fontFamily: "Arial",
+  fontSize: "45px",
+};
+
 export const Login = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const [isLoad, setisLoad] = useState(true);
 
@@ -38,11 +46,13 @@ export const Login = () => {
     setUserCred({ ...userCred, [event.target.name]: event.target.value });
   };
 
-  const hadnleSubmit = (event) => {
-    event.preventDefault();
+  // const hadnleSubmit = (event) => {
+  //   event.preventDefault();
 
-    dispatch(userInfo(userCred));
-  };
+  //   dispatch(userInfo(userCred));
+  // };
+
+
 
   return (
     <div className="theme-cyan">
@@ -52,12 +62,13 @@ export const Login = () => {
       >
         <div className="loader">
           <div className="m-t-30">
-            <img
+            {/* <img
               src={require("../assets/images/logo-icon.svg")}
               width="48"
               height="48"
-              alt="Lucid"
-            />
+              alt="Auto"
+            /> */}
+            AUTO
           </div>
           <p>Please wait...</p>
         </div>
@@ -67,11 +78,12 @@ export const Login = () => {
           <div className="vertical-align-middle auth-main">
             <div className="auth-box">
               <div className="top">
-                <img
+                {/* <img
                   src={Logo}
                   alt="Lucid"
                   style={{ height: "40px", margin: "10px" }}
-                />
+                /> */}
+                <span style={LogoStyle}>AUTO</span>
               </div>
               <div className="card">
                 <div className="header">
