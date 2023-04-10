@@ -33,7 +33,6 @@ const rootReducer = (history) => ({
   router: connectRouter(history),
 });
 
-
 const preloadedState = {};
 export const store = configureStore({
   reducer: rootReducer(history),
